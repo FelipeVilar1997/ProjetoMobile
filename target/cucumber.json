@@ -1,0 +1,86 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      },
+      {
+        "line": 2,
+        "value": "#utf-8"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 8,
+        "name": "BuscarVeiculosBuscaHome",
+        "description": "",
+        "id": "buscar-veiculos;buscarveiculosbuscahome",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 34407150000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "seleciono o campo de busca",
+            "match": {
+              "location": "ConsultaStep.seleciono_o_campo_de_busca()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 6200168400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "informo o \"camaro\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "camaro",
+                  "offset": 11
+                }
+              ],
+              "location": "ConsultaStep.informo_o(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 5325875500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "clico no botao buscar",
+            "match": {
+              "location": "ConsultaStep.clico_no_botao_buscar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 50523513300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "valido os veiculo que busquei",
+            "match": {
+              "location": "ConsultaStep.valido_os_veiculo_que_busquei()"
+            },
+            "keyword": "Então "
+          }
+        ]
+      }
+    ],
+    "name": "Buscar veiculos",
+    "description": "Eu como usuario do aplicativo iCarros\r\nQuero realizar a busca de veiculos",
+    "id": "buscar-veiculos",
+    "keyword": "Funcionalidade",
+    "uri": "ConsultaVeiculo.feature"
+  }
+]
